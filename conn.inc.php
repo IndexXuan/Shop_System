@@ -1,6 +1,6 @@
 <?php
 //通用头文件
-$link=mysql_connect('localhost','root','123456');//连接数据库
+$link=mysql_connect('localhost','yourname','yourpassword');//连接数据库
 mysql_select_db('shop_system'); //选择数据库
 session_start();//会话控制开始 此语句前面绝对不可以有输出！！！！！！！！！！！！！！！！！！
 
