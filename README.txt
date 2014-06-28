@@ -22,4 +22,5 @@ permission:top
 
 Open Source Under the MIT License.
 Get Project From: https://github.com/IndexXuan/Shop_System
+Demo: http://app.jsnu.edu.cn/xiaoxuan/shop/
 Fork me on github: https://github.com/IndexXuan/
