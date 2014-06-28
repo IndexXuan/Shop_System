@@ -1,0 +1,223 @@
+﻿/*
+ copyright alpha studio xiaoxuan 2013 summer holiday
+*/
+
+#leftbox { /*header 左*/
+	display:inline-block; /*兼容IE6、7 inline-block*/
+	*zoom:1;
+	*display:inline;
+}
+
+ #rightbox {  /*header 右*/
+	display:inline-block; /*兼容IE6、7 inline-block*/
+	*zoom:1;
+	*display:inline;
+}
+
+#left { /*左栏*/
+	 display:inline-block;  /*兼容IE6、7 inline-block*/
+	 *zoom:1;
+	 *display:inline;
+}  
+
+#right { /*右栏 要兼容chrom奇怪的错位*/
+	display:inline-block; /*兼容IE6、7 inline-block*/
+	*zoom:1;
+	*display:inline;
+}
+
+ /* min-width & max-width 兼容移动设备 */
+@media screen and (min-width: 220px) and (max-width: 1190px) { 
+
+html {
+    font-weight:bold;
+	/*width:50%;对footer有效*/
+	
+}
+
+#pagewrapper { /*页面封装*/
+    overflow-x:hidden;
+	background : #FAFFF0;
+}
+
+#header { /*页头*/
+    height : 260px;
+}
+
+#leftbox { /*header 左*/
+    margin-top : 50px;
+}
+
+#rightbox {  /*header 右*/
+    position : relative;
+	top : -70px;
+	left : -20px;
+}
+
+#loga { /*登录按钮*/
+    margin-left : -60px;
+	display : block;
+	width : 480px;
+	height : 25px;
+}
+
+#isLog { /*已登录按钮*/
+    margin-top:10px;
+    margin-left : 50px;
+	display : inline-block;
+	width : 230px;
+	height : 25px;
+}
+
+.form-search { /*搜索框*/
+    position : relative;
+    top : 20px;
+	left : 75px;
+}
+
+.navbar { /*navbar*/
+    /*position:relative;*/ /*响应式布局慎用position 导致navbar-fixed-top失效 且此处z-index=1030*/
+	/*top:-30px;*/
+	top : 10px;
+	max-width : 640px;
+}  
+  
+#left { /*左栏*/
+     position : relative;
+     margin-bottom : 40px;
+	 left : -30px;	 
+}
+
+#right { /*右栏 要兼容chrom奇怪的错位*/
+    position : static;
+    margin-top : 170px;
+}
+
+
+
+.up { /*介绍说明栏 竖式布局变宽对齐*/
+    width : 550px;
+	margin-left : -50px;
+    min-height : 320px;
+}
+
+#xun { /*发寻物贴按钮*/
+    position : relative;
+	left : 8%;
+    width : 50%;
+	display : inline-block;
+}
+
+#shi { /*发失物贴按钮*/
+    position : relative;
+	left : 23%;
+    width : 50%;
+	display : inline-block;
+}
+
+.bottom { /*成功案例 竖式布局变宽对齐*/
+    margin-left : -50px;
+    width : 550px;
+}
+
+hr { /*container 与 footer 间*/
+    margin-top : 2%;    
+} 
+ 
+}
+
+
+/*全局*/
+.gap {
+	width:100%;
+	height:20px;
+	clear:both;
+}
+a {
+	color:#666;
+}
+a:hover {
+	text-decoration:none;
+}
+
+/*登陆表单开始*/
+
+/*登陆span 此处绝对定位可解决变换文字带来的位置重排*/
+.login_win #Lcn {
+	font-size:12px;
+	color:#aaa;
+	position:relative;
+	left:10px;
+	top:5px;
+	white-space:nowrap;
+}
+
+.login_win #Lcp {
+	font-size:12px;
+	color:#aaa;
+	position:absolute;
+	left:351px;
+	top:130px;
+	white-space:nowrap;
+}
+
+h1 {
+	font-size:14px;
+	font-weight:bold;
+	margin-bottom:8px;
+	height:30px;
+	margin-top:-20px;
+}
+
+p {
+	font-size:11px;
+	color:#666666;
+	margin:5px;
+	padding-bottom:10px;
+}
+
+/*登录表单结束*/
+
+/*选项卡开始*/
+
+#find li:hover {
+	background:#ccffff;
+}
+
+#lost li:hover {
+	background:#ccffff;
+}
+
+.tab-pane li {
+    line-height:2.2em;height:2.2em;border-bottom:1px dashed #aaa;
+}
+
+.tab-pane i {
+    float:left;padding-right:5px;
+}
+
+.tab-pane li a {
+    display:inline-block;min-width:400px;
+}
+
+.tab-pane li p {
+    display:inline;height:10px;
+}
+/*选项卡结束*/
+
+.up pre {
+    font-size: 14px;
+    font-family: "微软雅黑";
+}
+
+/*页尾开始*/
+
+#footer a:hover {
+    text-decoration:underline;
+}
+
+#footer .btn:hover{
+    text-decoration:none;
+} 
+
+/*页尾结束*/

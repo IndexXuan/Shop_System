@@ -1,0 +1,61 @@
+sp_user:
+-------------------------
+id 
+nick_name 
+username 
+password 
+type决定权限（1客户 2供应商 3普通店员 4采购主管 5总经理） 
+ziliao（资料） 
+create_time（注册时间） 
+status（账号状态）
+
+sp_goods:
+-------------------------
+id
+name
+uid
+fromuid
+num
+pici
+type
+tiaoma
+pinpai
+weight
+chengben
+shoujia
+up_line
+dowm_line
+
+sp_op_goods
+----------------------------
+id
+gid
+gtype
+pici
+num
+uid
+op_time
+beizhu
+
+==================================================================================
+
+进货
+id 谁进货的 供应商 数量 生成批次 商品资料 商品类型 条码 品牌 重量 成本 售价
+
+退货
+id 商品id 批次 数量 操作人 操作时间 备注（比如理由）
+
+销售
+id 商品id 销售人 数量 客户 时间
+
+合同
+id uid（公司内部人员） touid content createtime last_modified_time 
+last_modified_uid（公司内部人员）
+
+ 
+
+user 
+type决定权限（1客户 2供应商 3普通店员 4采购主管 5总经理）
+
+操作
+1采购 2进货 3采购退货 4销售 5销售退货
